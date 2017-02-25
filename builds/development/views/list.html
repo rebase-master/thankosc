@@ -1,0 +1,42 @@
+<div class="alert alert-info margin-vert text-center" ng-if="noResult">
+    <p>No Repository by the name <strong>{{repo.name}}</strong> found!</p>
+</div>
+
+<div class="sterm margin-vert text-center" ng-if="!noResult && repo && !contributors">
+    <h4>Fetching contributors to the repository <strong>{{repo.name}}</strong>...</h4>
+</div>
+
+<div class="margin-vert alert alert-danger text-center" ng-if="contributors == -1">
+    <p>No contributors for this repository. Click search again for the next repository.</p>
+</div>
+
+<div id="contributors" ng-if="contributors && contributors != -1"  ng-controller="followController">
+    <!--<h2>Contributors to the repository: <strong>{{repo.name}}</strong></h2><br />-->
+    <div class="fall">
+        <ul>
+            <li>Repository: <strong>{{repo.name}}</strong></li>
+            <li>Contributors: <strong>{{contributors.length}}</strong></li>
+            <li><button ng-click="followAll($event)" class="btn btn-danger btn-sm">Follow All</button></li>
+        </ul>
+    </div>
+    <h2>Contributors list</h2>
+    <hr>
+    <div id="userlist">
+        <div class="user" ng-repeat="contributor in contributors">
+
+            <div class="photo">
+                <img class="img img-thumbnail" ng-src="{{contributor.avatar_url}}" alt="{{contributor.login}}">
+            </div><!--photo-->
+            <div class="info">
+                <h3><a class="username" ng-href="{{contributor.html_url}}">{{contributor.login}}</a></h3>
+                <p>contributions: {{contributor.contributions}}</p>
+            </div><!--info-->
+            <button ng-if="!isFollowing(contributor.login)" class="fubtn btn btn-primary" ng-click="follow($event)" data-id="{{contributor.login}}">
+                Follow
+            </button>
+            <button ng-if="isFollowing(contributor.login)" class="fubtn btn btn-warning" ng-click="follow($event)" data-id="{{contributor.login}}">
+                Following
+            </button>
+        </div><!--user-->
+    </div><!--userlist-->
+</div><!--contributors-->

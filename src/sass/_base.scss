@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+}
+body {
+  font: $mainFont;
+  background: url('../images/bg2.png') 0 0 repeat;
+  color: $typeDefault;
+}
+
+h1{
+ font: $headFont;
+ color: $headColor;
+ font-weight: $bold;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+p {
+  font-weight: $thin;
+  padding-bottom: 10px;
+}
+
+.wrapper{
+  border: 1px solid #777;
+  background-color: #fff;
+  max-width: 768px;
+  margin: auto;
+  box-shadow: 1px 3px 4px #555;
+  padding: 20px;
+  /* border-radius: 5px; */
+  margin-top: 50px;
+}

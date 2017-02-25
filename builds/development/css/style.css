@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,200,600,800);
+* {
+  margin: 0; }
+
+body {
+  font: 200 16px/14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../images/bg2.png") 0 0 repeat;
+  color: #000000; }
+
+h1 {
+  font: 200 36px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  font-weight: 600; }
+
+strong {
+  font-weight: 600; }
+
+p {
+  font-weight: 200;
+  padding-bottom: 10px; }
+
+.wrapper {
+  border: 1px solid #777;
+  background-color: #fff;
+  max-width: 768px;
+  margin: auto;
+  box-shadow: 1px 3px 4px #555;
+  padding: 20px;
+  /* border-radius: 5px; */
+  margin-top: 50px; }
+
+.searchbox {
+  margin-top: 50px; }
+  .searchbox .input-group {
+    max-width: 500px;
+    width: 100%; }
+    .searchbox .input-group .input-group-btn:last-child > .btn {
+      margin-left: -15px; }
+
+/*searchbox*/
+.margin-vert {
+  margin: 30px 50px; }
+
+/*margin-vert*/
+#contributors h2 {
+  margin: 20px;
+  text-align: center; }
+
+#contributors .fall {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  #contributors .fall ul {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0; }
+    #contributors .fall ul li {
+      flex: 1 0 200px;
+      list-style-type: none;
+      line-height: 32px;
+      text-align: center; }
+      #contributors .fall ul li:first-child {
+        flex: 4 0 200px;
+        flex-wrap: wrap; }
+
+#contributors #userlist {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px; }
+  #contributors #userlist .user {
+    flex: 0 0 200px;
+    margin-bottom: 50px;
+    text-align: center; }
+    #contributors #userlist .user h3 {
+      font-size: 20px; }
+    #contributors #userlist .user a.username {
+      color: #EFC94C;
+      text-decoration: none;
+      outline: none; }
+    #contributors #userlist .user p {
+      color: #777;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 0; }
+    #contributors #userlist .user img {
+      width: 100%; }
+
+button:focus, button:hover, button.btn-warning {
+  background-color: #EFC94C !important;
+  border-color: #eeeeee !important;
+  color: #ffffff !important;
+  outline: none !important; }

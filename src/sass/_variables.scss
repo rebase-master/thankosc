@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,200,600,800);
+
+//Add Color Palette
+$blue       : #063642;
+$yellow     : #EFC94C;
+$dark       : #000000;
+$light      : #FFFFFF;
+
+$backgroundColor    : $light;
+$typeDefault        : $dark;
+
+//Font variables
+$fontfamily       : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$thin     : 200;
+$normal   : 400;
+$bold     : 600;
+$heavy    : 800;
+
+$headFont   : $thin 36px/24px $fontfamily;
+$mainFont   : $thin 16px/14px $fontfamily;
+$headColor  : lighten($dark, 10);
+

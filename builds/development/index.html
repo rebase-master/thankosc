@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>thankOSC - Let us give back to the Open Source Contributors</title>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/lib/nprogress.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body ng-app="toscApp">
+        <div class="main">
+            <div class="wrapper">
+                <div class="header text-center">
+                    <h1>thankOSC<small> - Let's thank the Open Source Contributors</small></h1>
+                </div>
+                <div class="searchbox">
+                    <form class="navbar-form text-center" name="searchForm" role="search" novalidate>
+                        <div class="input-group">
+                            <input type="text" class="form-control" ng-model="reponame" ng-required="true" value="" placeholder="Type a Repository name and click search icon">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" ng-click="searchRepo($event)"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--searchbox-->
+                <ng-view></ng-view>
+            </div><!--wrapper-->
+        </div><!--main-->
+    </body>
+</html>

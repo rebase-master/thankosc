@@ -1,0 +1,16 @@
+.searchbox{
+  margin-top: 50px;
+
+  .input-group{
+      max-width: 500px;
+      width: 100%;
+
+    .input-group-btn:last-child>.btn{
+      margin-left: -15px;
+    }
+  }//input-group
+}/*searchbox*/
+
+.margin-vert{
+  margin: 30px 50px;
+}/*margin-vert*/

@@ -1,0 +1,78 @@
+#contributors{
+  h2{
+    margin: 20px;
+    text-align: center;
+  }
+
+  .fall{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    ul {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+
+      li {
+        flex: 1 0 200px;
+        list-style-type: none;
+        line-height: 32px;
+        text-align: center;
+
+        &:first-child{
+          flex: 4 0 200px;
+          flex-wrap: wrap;
+        }
+      }//li
+    }//ul
+  }//fall
+
+  #userlist{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .user{
+      //border: 1px solid #ddd;
+      flex: 0 0 200px;
+      margin-bottom: 50px;
+      text-align: center;
+
+      h3{
+        font-size: 20px;
+      }
+      a.username{
+        color: $yellow;
+        text-decoration: none;
+        outline: none;
+
+      }
+      p{
+        color: #777;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+      }//p
+      img{
+        width: 100%;
+      }//img
+
+
+    }//user
+  }//userlist
+
+
+}//ciontributors
+
+button{
+  &:focus, &:hover, &.btn-warning{
+    background-color: $yellow !important;
+    border-color: #eeeeee !important;
+    color: #ffffff !important;
+    outline: none !important;
+  }
+}//button

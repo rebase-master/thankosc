@@ -1,0 +1,11 @@
+// style.scss
+// ==============
+
+//Core Partial
+@import "variables";
+@import "base";
+
+//Import Modules
+@import "modules/home";
+@import "modules/contributors";
+
